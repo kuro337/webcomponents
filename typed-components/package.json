@@ -17,17 +17,21 @@
     "@rollup/plugin-terser": "^0.4.3",
     "@rollup/plugin-typescript": "^11.1.2",
     "@swc/cli": "^0.1.62",
-    "@swc/core": "^1.3.73",
+    "@swc/core": "^1.3.74",
     "@web/rollup-plugin-copy": "^0.4.0",
     "@web/rollup-plugin-html": "^2.0.0",
     "@webcomponents/webcomponentsjs": "^2.8.0",
-    "esbuild": "^0.18.17",
+    "esbuild": "^0.18.18",
     "lit": "^2.8.0",
-    "lit-element": "^3.3.2",
+    "lit-element": "^3.3.3",
     "rollup": "^3.27.2",
     "rollup-plugin-minify-html-literals": "^1.2.6",
     "rollup-plugin-summary": "^2.0.0",
     "tslib": "^2.6.1",
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@material/mwc-icon-button": "^0.27.0",
+    "@material/mwc-top-app-bar": "^0.27.0"
   }
 }
