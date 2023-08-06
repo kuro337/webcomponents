@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch and Insert Web Components</title>
+    <script src="basic-vanilla-sample/fetchOnClickAndInsert.js"></script>
+    <style>
+      div {
+        margin: 1rem;
+        padding: 1rem;
+      }
+      code {
+        background-color: #e7f5ff;
+        padding: 0.2rem;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <fetch-button-component
+        fetch-url="https://api.sampleapis.com/coffee/hot"
+        target-id="fetchOnClick"
+        column-order="id,title,description,ingredients,image"
+        debug
+      ></fetch-button-component>
+    </div>
+
+    <div id="fetchOnClick">
+      <p>this is a normal <code>div</code> with an <code>id</code>.</p>
+      <p>
+        when the <code>'Fetch Data'</code> button is clicked - it will
+        <code>emit</code> an event that fetches from a source and
+        <strong>inserts the table</strong> into this div!
+      </p>
+    </div>
+  </body>
+</html>

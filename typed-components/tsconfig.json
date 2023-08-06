@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    "strict": true,
+    "esModuleInterop": true,
+    "declaration": false,
+    "inlineSources": false,
+    //"outDir": "dist",
+    "outDir": "./build/ts-out",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "rootDir": "src",
+    "moduleResolution": "node",
+    "types": ["lit-element"]
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
