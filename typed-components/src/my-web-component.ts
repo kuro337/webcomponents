@@ -1,6 +1,6 @@
 import { LitElement, html, css } from "lit";
 
-class MyWebComponent extends LitElement {
+export class MyWebComponent extends LitElement {
   static styles = css`
     :host {
       display: block;

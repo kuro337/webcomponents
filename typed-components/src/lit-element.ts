@@ -39,8 +39,7 @@ export class MyElement extends LitElement {
           --text-color: ${this.color};
         }
       </style>
-      <p>Welcome to the Lit tutorial!</p>
-      <p>This is the ${this.version} code.</p>
+
       <p>Message: <span id="message-text">${this.message}</span></p>
       <button @click=${this.changeMessage}>Change Message</button>
     `;

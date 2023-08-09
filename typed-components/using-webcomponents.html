@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Component Example</title>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <script type="module" src="./build/my-web-component.bundle.js"></script>
+    <script type="module" src="./build/lit-element.bundle.js"></script>
+    <script type="module" src="./build/login-component.bundle.js"></script>
+    <script type="module" src="./build/listen-event.bundle.js"></script>
+    <script type="module" src="./build/header-component.bundle.js"></script>
+    <!-- <script type="module" src="./build/sticky-header.bundle.js"></script> -->
+
+    <style>
+      body {
+        margin: 0;
+      }
+      section {
+        margin: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header-component headerText="Kuro"></header-component>
+    <section>
+      <login-component></login-component>
+      <listen-event></listen-event>
+      <div style="display: flex; gap: 8rem">
+        <my-web-component></my-web-component>
+        <my-element></my-element>
+      </div>
+    </section>
+  </body>
+</html>

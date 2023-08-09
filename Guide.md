@@ -1,5 +1,35 @@
 # WebComponents
 
+## Code Splitting
+
+- Code Splitting splits your code into multiple chunks or bundles. These can be loaded on demand, which can greatly reduce the initial load time of your application
+
+- For example if we have `component1.ts` and `component2.ts` - and both `import "@material/mwc-icon-button"` - when we create the bundle it creates a seperate `shared-material-icons.js` file which is shared between the two components
+
+- When we include a `<script type="module" src="component1.ts"></script>` - it loads the `shared-material-icons.js` file first and then the `component1.ts` file
+
+- Then when we include the `<script type="module" src="component2.ts"></script>` - it uses the existing cached `shared-material-icons.js` file and loads the `component2.ts` file
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Code Splitting</title>
+  </head>
+  <body>
+    <script type="module" src="component1.ts"></script>
+    <script type="module" src="component2.ts"></script>
+  </body>
+</html>
+```
+
+```bash
+component1.ts loads the shared-material-icons.js file which has deps for it
+
+When we include component2.ts - it uses the existing shared material icons file
+```
+
 ## Bundling Webcomponents
 
 - Create a folder `typed-components`
